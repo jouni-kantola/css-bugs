@@ -10,6 +10,17 @@
     "start": "live-server --port=59876 src/"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "live-server": "^1.2.1",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md,html}": "prettier --write"
   }
 }
