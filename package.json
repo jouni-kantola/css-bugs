@@ -1,0 +1,15 @@
+{
+  "name": "css-bugs",
+  "version": "1.0.0",
+  "description": "A different kind of tutorial: Learn CSS by fixing bugs.",
+  "main": "src/index.html",
+  "repository": "git@github.com:jouni-kantola/css-bugs.git",
+  "author": "Jouni Kantola <jouni@kantola.se>",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server --port=59876 src/"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
