@@ -1,0 +1,37 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  header {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  main {
+    font-family: sans-serif;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 50px 1fr;
+  }
+
+  .box {
+    padding: 1rem;
+    background-color: lightblue;
+    border: 1px solid hotpink;
+    border-radius: 10px;
+  }
+</style>
+
+<header>
+  <p>Bug: Border should go all the way round, but doesn't.</p>
+</header>
+
+<main class="grid">
+  <div class="box">
+    <h1>Border!?</h1>
+    <p>Where art thou?</p>
+  </div>
+</main>
